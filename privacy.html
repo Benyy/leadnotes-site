@@ -4,99 +4,364 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LeadNotes Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the LeadNotes Chrome extension.">
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 820px;
-      margin: 48px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111827;
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0f172a;
     }
-    h1, h2 { color: #0f172a; }
-    small { color: #64748b; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 48px auto;
+      padding: 0 20px 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      color: var(--text);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.35rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .updated {
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+
+    .notice {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 22px 0;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    code {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 0.1rem 0.35rem;
+      color: #0f172a;
+    }
   </style>
 </head>
 <body>
-  <h1>LeadNotes Privacy Policy</h1>
-  <small>Last updated: May 2026</small>
+  <main>
+    <article class="card">
+      <h1>LeadNotes Privacy Policy</h1>
+      <p class="updated">Last updated: May 2026</p>
 
-  <p>
-    LeadNotes is a browser extension that helps users save private notes, tags,
-    statuses, and follow-up dates for LinkedIn profile URLs they manually visit.
-  </p>
+      <p>
+        LeadNotes is a Chrome extension that helps users save private notes,
+        tags, statuses, and follow-up dates for LinkedIn profile URLs they
+        manually visit. LeadNotes is an independent tool and is not affiliated
+        with LinkedIn.
+      </p>
 
-  <h2>Data we collect and store</h2>
-  <p>LeadNotes may store the following information in your LeadNotes account:</p>
-  <ul>
-    <li>Email address through Supabase Auth</li>
-    <li>Saved LinkedIn profile URLs</li>
-    <li>Manually entered display names</li>
-    <li>Manually entered headlines</li>
-    <li>Manually entered companies</li>
-    <li>Notes</li>
-    <li>Tags</li>
-    <li>Status values</li>
-    <li>Follow-up dates</li>
-    <li>Optional account, usage, company, tax, VAT, and billing information</li>
-  </ul>
+      <div class="notice">
+        <strong>Short version:</strong>
+        LeadNotes does not ask for your LinkedIn password, does not scrape
+        LinkedIn, does not use LinkedIn APIs, does not read LinkedIn cookies,
+        does not automate LinkedIn activity, and does not send LinkedIn messages.
+      </div>
 
-  <h2>Data we do not collect</h2>
-  <p>LeadNotes does not collect or store:</p>
-  <ul>
-    <li>LinkedIn passwords</li>
-    <li>LinkedIn session cookies</li>
-    <li>Scraped LinkedIn profile content</li>
-    <li>Automated LinkedIn activity</li>
-    <li>LinkedIn messages</li>
-  </ul>
+      <h2>1. Information we collect</h2>
 
-  <h2>No LinkedIn scraping or automation</h2>
-  <p>
-    LeadNotes does not scrape LinkedIn, does not use LinkedIn APIs, does not send
-    LinkedIn messages, and does not automate LinkedIn activity. Users manually save
-    and edit their own notes.
-  </p>
+      <p>
+        LeadNotes collects and stores information needed to provide its core
+        user-facing features: saving and managing private notes for profile URLs.
+      </p>
 
-  <h2>How we use data</h2>
-  <p>
-    We use your data to provide the LeadNotes service, sync your saved leads across
-    devices, support account management, and understand product usage during beta.
-    Optional business and billing details are collected for future invoicing and
-    account management purposes.
-  </p>
+      <h3>Account information</h3>
+      <ul>
+        <li>Email address, through Supabase Auth</li>
+        <li>Authentication status/session information required to keep you signed in</li>
+      </ul>
 
-  <h2>Storage provider</h2>
-  <p>
-    LeadNotes uses Supabase for authentication and cloud database storage.
-  </p>
+      <h3>Lead data you save manually</h3>
+      <ul>
+        <li>Saved LinkedIn profile URLs</li>
+        <li>Manually entered display names</li>
+        <li>Manually entered headlines</li>
+        <li>Manually entered companies</li>
+        <li>Private notes</li>
+        <li>Tags</li>
+        <li>Status values</li>
+        <li>Follow-up dates</li>
+        <li>Created and updated timestamps</li>
+      </ul>
 
-  <h2>Data export and deletion</h2>
-  <p>
-    Users can export their saved lead data as JSON and delete all saved leads from
-    the LeadNotes dashboard. Full account deletion is planned for production and
-    will be handled through a secure server-side process.
-  </p>
+      <h3>Optional account, usage, and billing profile information</h3>
+      <p>
+        During beta, LeadNotes may allow you to optionally provide account and
+        future billing information, including:
+      </p>
+      <ul>
+        <li>Full name</li>
+        <li>Account type, such as individual or company</li>
+        <li>Usage type, such as student, personal, freelancer, business, recruiter, headhunter, sales, agency, or other</li>
+        <li>Role or title</li>
+        <li>Company name</li>
+        <li>Company registration number</li>
+        <li>Tax ID</li>
+        <li>VAT ID</li>
+        <li>Billing email</li>
+        <li>Billing address</li>
+        <li>Company size</li>
+        <li>Optional intended-use notes</li>
+      </ul>
 
-  <h2>Payments</h2>
-  <p>
-    LeadNotes does not currently process payments. Pro features are marked as
-    coming soon.
-  </p>
+      <p>
+        These optional fields are used for account management, future invoicing
+        or billing preparation, and product understanding. They are not required
+        to use the core beta version of LeadNotes unless specifically stated in
+        the app.
+      </p>
 
-  <h2>AI</h2>
-  <p>
-    LeadNotes does not use AI in the current MVP.
-  </p>
+      <h3>Current tab URL and title</h3>
+      <p>
+        When you use the extension popup, LeadNotes may read the current tab URL
+        and tab title to help prefill editable fields, such as the profile URL or
+        a suggested display name. This is limited to the user-facing feature of
+        saving a profile note. LeadNotes does not read the page DOM, does not
+        scrape profile content, and does not collect browsing history in the
+        background.
+      </p>
 
-  <h2>Affiliation</h2>
-  <p>
-    LeadNotes is an independent tool and is not affiliated with LinkedIn.
-  </p>
+      <h2>2. Information we do not collect</h2>
 
-  <h2>Contact</h2>
-  <p>
-    For privacy or support questions, contact: your-email@example.com
-  </p>
+      <p>LeadNotes does not collect or store:</p>
+      <ul>
+        <li>LinkedIn passwords</li>
+        <li>LinkedIn session cookies</li>
+        <li>LinkedIn authentication tokens</li>
+        <li>Scraped LinkedIn profile content</li>
+        <li>LinkedIn messages</li>
+        <li>Automated LinkedIn activity</li>
+        <li>Payment card information</li>
+        <li>Health information</li>
+        <li>Personal communications outside information you manually enter into LeadNotes</li>
+      </ul>
+
+      <h2>3. How we use information</h2>
+
+      <p>LeadNotes uses collected information only to provide and improve its single purpose and user-facing features:</p>
+      <ul>
+        <li>Creating and managing your LeadNotes account</li>
+        <li>Saving and syncing your leads across devices</li>
+        <li>Displaying your private notes, tags, statuses, and follow-up dates</li>
+        <li>Allowing JSON export/import of your saved lead data</li>
+        <li>Preparing optional billing profile information for future invoicing support</li>
+        <li>Maintaining security, debugging issues, preventing abuse, and complying with legal obligations</li>
+      </ul>
+
+      <p>
+        LeadNotes does not use your saved lead data for advertising, retargeting,
+        interest-based advertising, or unrelated monetization purposes.
+      </p>
+
+      <h2>4. How we share information</h2>
+
+      <p>
+        LeadNotes does not sell your personal data. LeadNotes does not transfer
+        your personal or sensitive user data to third parties for advertising,
+        retargeting, or unrelated monetization.
+      </p>
+
+      <p>LeadNotes may share or process data only in the following limited cases:</p>
+      <ul>
+        <li>
+          <strong>Service providers:</strong> LeadNotes uses Supabase for
+          authentication and cloud database storage.
+        </li>
+        <li>
+          <strong>Legal compliance:</strong> if required to comply with applicable
+          laws, legal processes, or enforceable governmental requests.
+        </li>
+        <li>
+          <strong>Security and abuse prevention:</strong> if necessary to protect
+          LeadNotes, users, or the public from security threats, fraud, or abuse.
+        </li>
+        <li>
+          <strong>Business transfer:</strong> if LeadNotes is involved in a
+          merger, acquisition, or sale of assets, user data may be transferred as
+          part of that transaction, subject to this policy or a successor policy.
+        </li>
+      </ul>
+
+      <h2>5. Chrome Web Store Limited Use disclosure</h2>
+
+      <p>
+        LeadNotes uses personal and sensitive user data only to provide or improve
+        the extension’s single purpose and user-facing features. LeadNotes does
+        not use or transfer user data for personalized advertising, retargeting,
+        interest-based advertising, or unrelated monetization.
+      </p>
+
+      <p>
+        LeadNotes does not allow humans to read user data except where necessary
+        for user-requested support, security purposes, legal compliance, or
+        internal operations using aggregated or anonymized information.
+      </p>
+
+      <h2>6. Data security</h2>
+
+      <p>
+        LeadNotes transmits personal and sensitive user data over secure
+        connections using HTTPS. LeadNotes uses Supabase for authentication and
+        cloud storage. Supabase provides infrastructure-level security controls,
+        including secure transmission and database access controls.
+      </p>
+
+      <p>
+        No method of transmission or storage is perfectly secure, but LeadNotes
+        is designed to minimize permissions and avoid collecting unnecessary data.
+      </p>
+
+      <h2>7. Permissions</h2>
+
+      <p>
+        LeadNotes requests only the permissions needed for its current features.
+        Depending on the version installed, these may include permissions such as:
+      </p>
+
+      <ul>
+        <li>
+          <strong>storage:</strong> used for local extension preferences such as
+          theme and shortcut settings.
+        </li>
+        <li>
+          <strong>tabs or activeTab:</strong> used to read the current tab URL and
+          title when the user opens the extension popup, so LeadNotes can identify
+          the profile URL the user is saving.
+        </li>
+        <li>
+          <strong>commands:</strong> used to support optional keyboard shortcut
+          behavior managed by Chrome.
+        </li>
+      </ul>
+
+      <p>
+        LeadNotes does not request permissions to read LinkedIn cookies, does not
+        request LinkedIn credentials, and does not use content scripts to scrape
+        LinkedIn pages.
+      </p>
+
+      <h2>8. Data retention</h2>
+
+      <p>
+        LeadNotes keeps your saved lead data and optional profile information for
+        as long as your account is active or until you delete the data.
+      </p>
+
+      <p>
+        You can delete saved leads from the LeadNotes dashboard. Full account
+        deletion is planned as a production feature and will be handled through a
+        secure server-side process.
+      </p>
+
+      <h2>9. Access, export, and deletion</h2>
+
+      <p>You can:</p>
+      <ul>
+        <li>View your saved leads in the LeadNotes dashboard</li>
+        <li>Edit or delete individual leads</li>
+        <li>Export saved lead data as JSON</li>
+        <li>Delete all saved leads from the dashboard</li>
+        <li>Edit optional account and billing profile information in settings</li>
+      </ul>
+
+      <p>
+        For account deletion or privacy questions, contact us using the email
+        address listed below.
+      </p>
+
+      <h2>10. Payments</h2>
+
+      <p>
+        LeadNotes does not currently process payments. Pro features may be shown
+        as “coming soon.” If payments are added later, this policy will be updated
+        before payment processing is launched.
+      </p>
+
+      <h2>11. AI</h2>
+
+      <p>
+        LeadNotes does not use AI in the current MVP.
+      </p>
+
+      <h2>12. Children</h2>
+
+      <p>
+        LeadNotes is not intended for children. Users should not use LeadNotes if
+        they are not legally permitted to create an account or use browser
+        extensions in their jurisdiction.
+      </p>
+
+      <h2>13. Changes to this policy</h2>
+
+      <p>
+        We may update this Privacy Policy from time to time. If we make material
+        changes, we will update the “Last updated” date and, where appropriate,
+        provide additional notice.
+      </p>
+
+      <h2>14. Contact</h2>
+
+      <p>
+        For privacy or support questions, contact:
+        <strong>your-email@example.com</strong>
+      </p>
+    </article>
+  </main>
 </body>
 </html>
