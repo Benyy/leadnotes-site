@@ -103,12 +103,12 @@
       <p>
         LeadNotes is a Chrome extension that helps users save private notes,
         tags, statuses, and follow-up dates for LinkedIn profile URLs they
-        manually visit. LeadNotes is an independent tool and is not affiliated
-        with LinkedIn.
+        manually choose to save. LeadNotes is an independent tool and is not
+        affiliated with LinkedIn.
       </p>
 
       <div class="notice">
-        <strong>Short version:</strong>
+        <strong>At a glance:</strong>
         LeadNotes does not ask for your LinkedIn password, does not scrape
         LinkedIn, does not use LinkedIn APIs, does not read LinkedIn cookies,
         does not automate LinkedIn activity, and does not send LinkedIn messages.
@@ -118,13 +118,14 @@
 
       <p>
         LeadNotes collects and stores information needed to provide its core
-        user-facing features: saving and managing private notes for profile URLs.
+        user-facing features: saving and managing private notes for profile URLs,
+        syncing data across devices, and improving the product.
       </p>
 
       <h3>Account information</h3>
       <ul>
         <li>Email address, through Supabase Auth</li>
-        <li>Authentication status/session information required to keep you signed in</li>
+        <li>Authentication status and session information required to keep you signed in</li>
       </ul>
 
       <h3>Lead data you save manually</h3>
@@ -171,10 +172,38 @@
       <p>
         When you use the extension popup, LeadNotes may read the current tab URL
         and tab title to help prefill editable fields, such as the profile URL or
-        a suggested display name. This is limited to the user-facing feature of
-        saving a profile note. LeadNotes does not read the page DOM, does not
-        scrape profile content, and does not collect browsing history in the
-        background.
+        a suggested display name. This happens only when you open the extension
+        popup and is limited to the user-facing feature of saving a profile note.
+      </p>
+
+      <p>
+        LeadNotes does not read the page DOM, does not scrape profile content,
+        does not read LinkedIn cookies, and does not collect browsing history in
+        the background.
+      </p>
+
+      <h3>Privacy-safe product usage events</h3>
+      <p>
+        LeadNotes may collect limited product usage events to understand and
+        improve the app. These events may include actions such as opening the
+        popup, opening the dashboard, creating, updating, or deleting a lead,
+        exporting or importing JSON, deleting all leads, changing dark mode,
+        changing shortcut settings, or saving account profile settings.
+      </p>
+
+      <p>
+        Product usage events do not include LinkedIn profile URLs, normalized
+        profile URLs, tab titles, display names, headlines, companies, notes,
+        tags, follow-up dates, email addresses, billing details, passwords,
+        tokens, cookies, browsing history, search text, keystrokes, click
+        coordinates, or page content.
+      </p>
+
+      <p>
+        LeadNotes does not use third-party analytics providers in the extension.
+        Product usage events are stored in Supabase and are used only for product
+        functionality, product improvement, debugging, security, and abuse
+        prevention.
       </p>
 
       <h2>2. Information we do not collect</h2>
@@ -189,24 +218,30 @@
         <li>Automated LinkedIn activity</li>
         <li>Payment card information</li>
         <li>Health information</li>
+        <li>Browsing history collected in the background</li>
         <li>Personal communications outside information you manually enter into LeadNotes</li>
       </ul>
 
       <h2>3. How we use information</h2>
 
-      <p>LeadNotes uses collected information only to provide and improve its single purpose and user-facing features:</p>
+      <p>
+        LeadNotes uses collected information only to provide, secure, and improve
+        its single purpose and user-facing features:
+      </p>
       <ul>
         <li>Creating and managing your LeadNotes account</li>
         <li>Saving and syncing your leads across devices</li>
         <li>Displaying your private notes, tags, statuses, and follow-up dates</li>
-        <li>Allowing JSON export/import of your saved lead data</li>
+        <li>Allowing JSON export and import of your saved lead data</li>
         <li>Preparing optional billing profile information for future invoicing support</li>
+        <li>Understanding basic product usage through privacy-safe product events</li>
         <li>Maintaining security, debugging issues, preventing abuse, and complying with legal obligations</li>
       </ul>
 
       <p>
-        LeadNotes does not use your saved lead data for advertising, retargeting,
-        interest-based advertising, or unrelated monetization purposes.
+        LeadNotes does not use your saved lead data or product usage events for
+        advertising, retargeting, interest-based advertising, or unrelated
+        monetization purposes.
       </p>
 
       <h2>4. How we share information</h2>
@@ -214,14 +249,15 @@
       <p>
         LeadNotes does not sell your personal data. LeadNotes does not transfer
         your personal or sensitive user data to third parties for advertising,
-        retargeting, or unrelated monetization.
+        retargeting, interest-based advertising, creditworthiness, lending, or
+        unrelated monetization.
       </p>
 
       <p>LeadNotes may share or process data only in the following limited cases:</p>
       <ul>
         <li>
           <strong>Service providers:</strong> LeadNotes uses Supabase for
-          authentication and cloud database storage.
+          authentication, cloud database storage, and product event storage.
         </li>
         <li>
           <strong>Legal compliance:</strong> if required to comply with applicable
@@ -244,13 +280,14 @@
         LeadNotes uses personal and sensitive user data only to provide or improve
         the extension’s single purpose and user-facing features. LeadNotes does
         not use or transfer user data for personalized advertising, retargeting,
-        interest-based advertising, or unrelated monetization.
+        interest-based advertising, unrelated monetization, creditworthiness, or
+        lending purposes.
       </p>
 
       <p>
         LeadNotes does not allow humans to read user data except where necessary
         for user-requested support, security purposes, legal compliance, or
-        internal operations using aggregated or anonymized information.
+        internal operations using aggregated or privacy-safe information.
       </p>
 
       <h2>6. Data security</h2>
@@ -281,8 +318,8 @@
         </li>
         <li>
           <strong>tabs or activeTab:</strong> used to read the current tab URL and
-          title when the user opens the extension popup, so LeadNotes can identify
-          the profile URL the user is saving.
+          title only when the user opens the extension popup, so LeadNotes can
+          identify the profile URL the user is manually saving.
         </li>
         <li>
           <strong>commands:</strong> used to support optional keyboard shortcut
@@ -299,8 +336,10 @@
       <h2>8. Data retention</h2>
 
       <p>
-        LeadNotes keeps your saved lead data and optional profile information for
-        as long as your account is active or until you delete the data.
+        LeadNotes keeps your saved lead data, optional profile information, and
+        product usage events for as long as your account is active or until the
+        data is deleted according to available product controls or applicable
+        retention practices.
       </p>
 
       <p>
